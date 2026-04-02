@@ -2,14 +2,6 @@
 """
 Скрипт для скачивания реплеев Dota 2 через Stratz API.
 Требуется Bearer токен для авторизации.
-
-Как получить токен:
-1. Зайди на https://stratz.com в браузере
-2. Нажми F12 -> Network (Сеть)
-3. Обнови страницу
-4. Найди любой запрос к api.stratz.com
-5. Скопируй значение "Authorization: Bearer XXXXX"
-6. Вставь токен ниже (без "Bearer ")
 """
 import sys
 import io
@@ -29,8 +21,8 @@ LINKS_FILE = Path("data/raw_links.txt")
 MIN_MATCH_AGE_HOURS = 24
 TARGET_MATCHES = 50
 
-# ВСТАВЬ СВОЙ ТОКЕН НИЖЕ!
-BEARER_TOKEN = "YOUR_BEARER_TOKEN_HERE"
+# Токен авторизации
+BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWJqZWN0IjoiNTUxNjZkNTAtOTY0MS00MmU1LWEyMjQtMjZlMDcyNWE1YTAwIiwiU3RlYW1JZCI6IjEwNzg4MDI5ODEiLCJBUElVc2VyIjoidHJ1ZSIsIm5iZiI6MTc3MTE2MDYwMiwiZXhwIjoxODAyNjk2NjAyLCJpYXQiOjE3NzExNjA2MDIsImlzcyI6Imh0dHBzOi8vYXBpLnN0cmF0ei5jb20ifQ.VPrAkCuJ4KlttFGGtae09_LoQk91GkR4vEaybt6X3iM"
 
 
 # GraphQL запрос
@@ -60,17 +52,6 @@ def fetch_matches():
     print("=" * 60)
     print("ПОИСК МАТЧЕЙ ЧЕРЕЗ STRATZ API")
     print("=" * 60)
-    
-    if BEARER_TOKEN == "YOUR_BEARER_TOKEN_HERE":
-        print("[ОШИБКА] Укажите Bearer токен!")
-        print("\nКак получить токен:")
-        print("1. Зайди на https://stratz.com в браузере")
-        print("2. Нажми F12 -> Network (Сеть)")
-        print("3. Обнови страницу")
-        print("4. Найди запрос к api.stratz.com")
-        print("5. Скопируй токен из Authorization header")
-        print("6. Вставь в переменную BEARER_TOKEN")
-        return []
     
     all_valid_matches = []
     skip = 0
