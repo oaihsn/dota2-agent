@@ -9,20 +9,18 @@ ENV/
 env/
 .venv/
 
-# PyTorch
+# PyTorch models
 *.pth
 *.pt
+*.onnx
 
-# Data
-*. replay
+# Dota 2 data
+*.replay
 *.dem
 data/replays/
 data/datasets/
-
-# Models
-models/*.pth
-models/*.pt
-models/*.onnx
+data/*.json
+data/*.csv
 
 # Logs
 logs/
@@ -38,16 +36,14 @@ logs/
 .DS_Store
 Thumbs.db
 
-# Virtual environments
-env/
-venv/
-
-# PyCharm
-.idea/
-
 # Jupyter
 .ipynb_checkpoints/
 
-# Temporary files
+# Temporary
 *.tmp
 *.bak
+*.cache
+
+# Environment
+.env
+.env.local
