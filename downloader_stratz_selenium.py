@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Скрипт для скачивания реплеев Dota 2 через Stratz API.
-Фильтрует матчи по MMR (minimum 4000).
+Собирает матчи без привязки к конкретному Steam ID.
 """
 import sys
 import io
@@ -15,22 +15,20 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 STRATZ_API = "https://api.stratz.com/graphql"
 OUTPUT_DIR = Path("data/raw")
 LINKS_FILE = Path("data/raw_links.txt")
-TARGET_MATCHES = 50
-MIN_MMR = 4000  # Минимальный MMR
+MIN_IMP = 40  # averageImp >= 40 ~= 4000+ MMR
 
-# Токен - получите на https://stratz.com/api
-BEARER_TOKEN = "YOUR_TOKEN_HERE"
+BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWJqZWN0IjoiNTUxNjZkNTAtOTY0MS00MmU1LWEyMjQtMjZlMDcyNWE1YTAwIiwiU3RlYW1JZCI6IjEwNzg4MDI5ODEiLCJBUElVc2VyIjoidHJ1ZSIsIm5iZiI6MTc3MTE2MDYwMiwiZXhwIjoxODAyNjk2NjAyLCJpYXQiOjE3NzExNjA2MDIsImlzcyI6Imh0dHBzOi8vYXBpLnN0cmF0ei5jb20ifQ.VPrAkCuJ4KlttFGGtae09_LoQk91GkR4vEaybt6X3iM"
 
-# GraphQL запрос с фильтром по averageBracket
+# Запрос для конкретного игрока
 QUERY = """
 query {
   player(steamAccountId: 1078802981) {
-    matches(request: {take: 200, averageBracket: [8, 9, 10, 11, 12, 13, 14, 15]}) {
+    matches(request: {take: 100}) {
       id
       gameMode
       startDateTime
       durationSeconds
-      averageBracket
+      averageImp
     }
   }
 }
@@ -41,41 +39,15 @@ MODE_NAMES = {
     "ALL_PICK": "All Pick",
     "CAPTAINS_MODE": "Captains Mode",
     "TURBO": "Turbo",
-    "ALL_RANDOM": "All Random",
-    "SINGLE_DRAFT": "Single Draft",
-    "CAPTAINS_DRAFT": "Captains Draft",
-    "ABILITY_DRAFT": "Ability Draft",
-    "ALL_RANDOM_DRAFT": "All Random Draft",
-    "MUTATION": "Mutation"
 }
-
-BRACKET_NAMES = {
-    1: "Herald",
-    2: "Guardian",
-    3: "Crusader",
-    4: "Archon",
-    5: "Legend",
-    6: "Ancient",
-    7: "Divine",
-    8: "Immortal 1-100",
-    9: "Immortal 101-500",
-    10: "Immortal 501-1000",
-    11: "Immortal 1001-2500",
-    12: "Immortal 2501-5000",
-    13: "Immortal 5001-7500",
-    14: "Immortal 7501-10000",
-    15: "Immortal 10000+"
-}
-
-def get_bracket_name(bracket):
-    if bracket is None:
-        return "Unknown"
-    return BRACKET_NAMES.get(bracket, f"Bracket {bracket}")
 
 def get_mode_name(mode):
     if isinstance(mode, str):
         return MODE_NAMES.get(mode, mode)
     return str(mode)
+
+def get_mmr_from_imp(imp):
+    return 1000 + (imp * 75)
 
 def fetch_with_selenium():
     from selenium import webdriver
@@ -83,7 +55,7 @@ def fetch_with_selenium():
     import chromedriver_autoinstaller
 
     print("=" * 60)
-    print("ПОИСК РЕЙТИНГОВЫХ МАТЧЕЙ (MMR > 4000)")
+    print("ПОИСК ПУБЛИЧНЫХ МАТЧЕЙ (MMR > 4000)")
     print("=" * 60)
 
     try:
@@ -151,18 +123,16 @@ def fetch_with_selenium():
             print("[INFO] Матчей не найдено")
             return []
         
-        # Фильтруем по bracket (MMR)
+        # Фильтруем по averageImp
         for match in matches:
-            bracket = match.get("averageBracket")
-            
-            # averageBracket 8+ = Immortal (примерно 4000+ MMR)
-            if bracket is not None and bracket >= 8:
+            avg_imp = match.get("averageImp")
+            if avg_imp is not None and avg_imp >= MIN_IMP:
                 all_valid_matches.append({
                     "id": match.get("id"),
                     "gameMode": match.get("gameMode"),
                     "startDateTime": match.get("startDateTime"),
                     "durationSeconds": match.get("durationSeconds"),
-                    "averageBracket": bracket
+                    "averageImp": avg_imp
                 })
 
     except Exception as e:
@@ -184,13 +154,13 @@ def fetch_with_selenium():
     print(f"Найдено высоких MMR матчей: {len(all_valid_matches)}")
     
     if all_valid_matches:
-        brackets = {}
+        print("Режимы:")
+        modes = {}
         for m in all_valid_matches:
-            b = m.get("averageBracket", 0)
-            brackets[b] = brackets.get(b, 0) + 1
-        print("Bracket распределение:")
-        for b in sorted(brackets.keys()):
-            print(f"  {get_bracket_name(b)}: {brackets[b]}")
+            mode = m.get("gameMode", "Unknown")
+            modes[mode] = modes.get(mode, 0) + 1
+        for mode, count in modes.items():
+            print(f"  {get_mode_name(mode)}: {count}")
     
     return all_valid_matches
 
@@ -199,10 +169,9 @@ def save_links(matches, filepath):
     print(f"\n[3/3] Сохранение в {filepath}...")
     
     with open(filepath, "w", encoding="utf-8") as f:
-        f.write(f"# Dota 2 Matches - High MMR (4000+)\n")
+        f.write(f"# Dota 2 Matches - High MMR (Imp >= {MIN_IMP})\n")
         f.write(f"# Date: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
         f.write(f"# Total: {len(matches)}\n")
-        f.write(f"# Min MMR: ~4000 (Bracket 8+)\n")
         f.write("=" * 60 + "\n\n")
         
         for i, match in enumerate(matches, 1):
@@ -210,7 +179,8 @@ def save_links(matches, filepath):
             start_time = match.get("startDateTime", 0)
             duration = match.get("durationSeconds", 0)
             game_mode = match.get("gameMode", "")
-            bracket = match.get("averageBracket", 0)
+            avg_imp = match.get("averageImp", 0)
+            est_mmr = get_mmr_from_imp(avg_imp)
             
             dt_str = "N/A"
             if start_time > 0:
@@ -218,22 +188,20 @@ def save_links(matches, filepath):
                 dt_str = dt.strftime('%Y-%m-%d %H:%M')
             
             mode_name = get_mode_name(game_mode)
-            bracket_name = get_bracket_name(bracket)
             
             f.write(f"{i}. Match ID: {match_id}\n")
             f.write(f"   Date: {dt_str}\n")
             f.write(f"   Duration: {duration}s ({duration//60}m)\n")
             f.write(f"   Mode: {mode_name}\n")
-            f.write(f"   Bracket: {bracket_name} (~{bracket * 500}+ MMR)\n")
-            f.write(f"   URL: https://stratz.com/matches/{match_id}\n")
-            f.write("\n")
+            f.write(f"   Avg Imp: {avg_imp} (~{est_mmr} MMR)\n")
+            f.write(f"   URL: https://stratz.com/matches/{match_id}\n\n")
     
     print(f"[OK] Saved {len(matches)} matches")
 
 
 def main():
     print("\n" + "=" * 60)
-    print("DOTA 2 MATCH SEARCH - HIGH MMR (4000+)")
+    print("DOTA 2 MATCH SEARCH - PUBLIC MATCHES")
     print("=" * 60)
     
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

@@ -5,26 +5,22 @@ __pycache__/
 *.so
 .Python
 venv/
-ENV/
 env/
-.venv/
+.env
 
-# PyTorch models
-*.pth
-*.pt
-*.onnx
+# Data
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
 
-# Dota 2 data
-*.replay
-*.dem
-data/replays/
-data/datasets/
-data/*.json
-data/*.csv
+# Models
+models/*
+!models/.gitkeep
 
 # Logs
-logs/
-*.log
+logs/*
+!logs/.gitkeep
 
 # IDE
 .vscode/
@@ -36,14 +32,7 @@ logs/
 .DS_Store
 Thumbs.db
 
-# Jupyter
-.ipynb_checkpoints/
-
-# Temporary
-*.tmp
-*.bak
-*.cache
-
-# Environment
-.env
-.env.local
+# PyTorch
+*.pt
+*.pth
+*.ckpt
