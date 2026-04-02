@@ -12,45 +12,46 @@ dota2_agent/
 ├── src/            # Исходный код проекта
 ├── logs/           # Логи
 ├── config/         # Конфигурационные файлы
+├── clarity_parser/  # Парсер реплеев Clarity
+├── downloader_opendota.py    # OpenDota API
+├── downloader_stratz.py      # Stratz API (базовый)
+├── downloader_stratz_selenium.py  # Stratz API через Selenium
 └── README.md       # Этот файл
+```
+
+## Установка
+
+```bash
+pip install -r requirements.txt
 ```
 
 ## Быстрый старт
 
 ### 1. Проверка GPU
 
-Перед началом работы убедитесь, что PyTorch с поддержкой CUDA установлен:
-
-```bash
-# Для NVIDIA GPU с CUDA 11.8
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-
-# Для NVIDIA GPU с CUDA 12.1
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-```
-
-Затем запустите скрипт проверки GPU:
-
 ```bash
 python scripts/check_gpu.py
 ```
 
-Скрипт выведет:
-- Название вашей видеокарты (например, NVIDIA GeForce RTX 5060 Ti)
-- Объём общей памяти GPU
-- Объём свободной памяти
+### 2. Загрузка данных матчей
 
-### 2. Требования
+**Через Stratz API (рекомендуется):**
+```bash
+python downloader_stratz_selenium.py
+```
+Требуется токен с https://stratz.com/api
+
+**Через OpenDota API:**
+```bash
+python downloader_opendota.py
+```
+
+## Требования
 
 - Python 3.8+
 - PyTorch с поддержкой CUDA
 - NVIDIA GPU с достаточным объёмом памяти (рекомендуется 8GB+)
 
-## Следующие шаги
-
-1. Установите PyTorch с поддержкой CUDA
-2. Запустите `python scripts/check_gpu.py` для проверки
-3. Начните разработку агента в папке `src/`
-
 ---
+
 Удачи в разработке! 🎮

@@ -14,3 +14,8 @@ tqdm>=4.65.0
 
 # Optional: GPU memory management
 psutil>=5.9.0
+
+# Selenium for Stratz API
+selenium>=4.0.0
+webdriver-manager>=4.0.0
+chromedriver-autoinstaller>=0.6.0
