@@ -1,0 +1,605 @@
+# Ссылки на реплеи Dota 2
+# Дата: 2026-04-02 19:25:21
+# Всего матчей: 100
+============================================================
+
+1. Match ID: 8754590987
+   Средний MMR: N/A
+   radiant_players: [0, 0, 0, 0, 0]
+   dire_players: [0, 0, 0, 0, 0]
+   Ссылка: https://www.opendota.com/matches/8754590987
+
+2. Match ID: 8754590253
+   Средний MMR: N/A
+   radiant_players: [0, 0, 0, 0, 0]
+   dire_players: [0, 0, 0, 0, 0]
+   Ссылка: https://www.opendota.com/matches/8754590253
+
+3. Match ID: 8754585798
+   Средний MMR: N/A
+   radiant_players: [0, 0, 0, 0, 0]
+   dire_players: [0, 0, 0, 0, 0]
+   Ссылка: https://www.opendota.com/matches/8754585798
+
+4. Match ID: 8754583873
+   Средний MMR: N/A
+   radiant_players: [14, 64, 6, 29, 22]
+   dire_players: [47, 5, 37, 44, 42]
+   Ссылка: https://www.opendota.com/matches/8754583873
+
+5. Match ID: 8754579491
+   Средний MMR: N/A
+   radiant_players: [68, 84, 14, 35, 56]
+   dire_players: [114, 30, 47, 71, 31]
+   Ссылка: https://www.opendota.com/matches/8754579491
+
+6. Match ID: 8754579459
+   Средний MMR: N/A
+   radiant_players: [45]
+   dire_players: [110]
+   Ссылка: https://www.opendota.com/matches/8754579459
+
+7. Match ID: 8754577593
+   Средний MMR: N/A
+   radiant_players: [62, 82, 60, 63, 31]
+   dire_players: [29, 74, 111, 42, 110]
+   Ссылка: https://www.opendota.com/matches/8754577593
+
+8. Match ID: 8754574831
+   Средний MMR: N/A
+   radiant_players: [89, 137, 87, 92, 7]
+   dire_players: [5, 54, 113, 69, 70]
+   Ссылка: https://www.opendota.com/matches/8754574831
+
+9. Match ID: 8754574698
+   Средний MMR: N/A
+   radiant_players: [77, 63, 86, 40, 49]
+   dire_players: [131, 107, 93, 88, 76]
+   Ссылка: https://www.opendota.com/matches/8754574698
+
+10. Match ID: 8754572490
+   Средний MMR: N/A
+   radiant_players: [0, 0, 0, 0, 0]
+   dire_players: [0, 0, 0, 0, 0]
+   Ссылка: https://www.opendota.com/matches/8754572490
+
+11. Match ID: 8754572470
+   Средний MMR: N/A
+   radiant_players: [46, 79, 101, 17, 35]
+   dire_players: [26, 61, 7, 38, 111]
+   Ссылка: https://www.opendota.com/matches/8754572470
+
+12. Match ID: 8754572396
+   Средний MMR: N/A
+   radiant_players: [29, 22, 31, 44, 5]
+   dire_players: [0, 2, 6, 30, 20]
+   Ссылка: https://www.opendota.com/matches/8754572396
+
+13. Match ID: 8754572350
+   Средний MMR: N/A
+   radiant_players: [11, 64, 10, 85, 35]
+   dire_players: [111, 70, 71, 36, 27]
+   Ссылка: https://www.opendota.com/matches/8754572350
+
+14. Match ID: 8754572224
+   Средний MMR: N/A
+   radiant_players: [14, 26, 25, 135, 63]
+   dire_players: [54, 74, 47, 84, 11]
+   Ссылка: https://www.opendota.com/matches/8754572224
+
+15. Match ID: 8754571629
+   Средний MMR: N/A
+   radiant_players: [108, 113, 62, 70, 104]
+   dire_players: [135, 2, 8, 95, 4]
+   Ссылка: https://www.opendota.com/matches/8754571629
+
+16. Match ID: 8754571397
+   Средний MMR: N/A
+   radiant_players: [25, 91, 73, 14, 6]
+   dire_players: [37, 84, 26, 49, 79]
+   Ссылка: https://www.opendota.com/matches/8754571397
+
+17. Match ID: 8754571266
+   Средний MMR: N/A
+   radiant_players: [74, 26, 98, 18, 129]
+   dire_players: [93, 33, 40, 35, 128]
+   Ссылка: https://www.opendota.com/matches/8754571266
+
+18. Match ID: 8754570610
+   Средний MMR: N/A
+   radiant_players: [5, 54, 123, 135, 36]
+   dire_players: [21, 42, 27, 88, 74]
+   Ссылка: https://www.opendota.com/matches/8754570610
+
+19. Match ID: 8754570436
+   Средний MMR: N/A
+   radiant_players: [85, 119, 113, 11, 37]
+   dire_players: [40, 74, 123, 22, 72]
+   Ссылка: https://www.opendota.com/matches/8754570436
+
+20. Match ID: 8754570034
+   Средний MMR: N/A
+   radiant_players: [70, 97, 69, 64, 25]
+   dire_players: [8, 10, 86, 51, 14]
+   Ссылка: https://www.opendota.com/matches/8754570034
+
+21. Match ID: 8754569787
+   Средний MMR: N/A
+   radiant_players: [0, 0, 0, 0, 0]
+   dire_players: [0, 0, 0, 0, 0]
+   Ссылка: https://www.opendota.com/matches/8754569787
+
+22. Match ID: 8754569570
+   Средний MMR: N/A
+   radiant_players: [0, 0, 0, 0, 0]
+   dire_players: [0, 0, 0, 0, 0]
+   Ссылка: https://www.opendota.com/matches/8754569570
+
+23. Match ID: 8754569424
+   Средний MMR: N/A
+   radiant_players: [114, 75, 50, 44, 1]
+   dire_players: [14, 5, 45, 23, 74]
+   Ссылка: https://www.opendota.com/matches/8754569424
+
+24. Match ID: 8754569294
+   Средний MMR: N/A
+   radiant_players: [14, 23, 112, 136, 44]
+   dire_players: [36, 71, 93, 97, 7]
+   Ссылка: https://www.opendota.com/matches/8754569294
+
+25. Match ID: 8754569156
+   Средний MMR: N/A
+   radiant_players: [6, 2, 101, 106, 82]
+   dire_players: [75, 78, 19, 4, 14]
+   Ссылка: https://www.opendota.com/matches/8754569156
+
+26. Match ID: 8754569047
+   Средний MMR: N/A
+   radiant_players: [0, 0, 0, 0, 0]
+   dire_players: [0, 0, 0, 0, 0]
+   Ссылка: https://www.opendota.com/matches/8754569047
+
+27. Match ID: 8754568782
+   Средний MMR: N/A
+   radiant_players: [36, 19, 37, 97, 105]
+   dire_players: [128, 68, 11, 54, 14]
+   Ссылка: https://www.opendota.com/matches/8754568782
+
+28. Match ID: 8754568670
+   Средний MMR: N/A
+   radiant_players: [81, 2, 56, 91, 59]
+   dire_players: [49, 7, 5, 42, 30]
+   Ссылка: https://www.opendota.com/matches/8754568670
+
+29. Match ID: 8754568379
+   Средний MMR: N/A
+   radiant_players: [0, 0, 0, 0, 0]
+   dire_players: [0, 0, 0, 0, 0]
+   Ссылка: https://www.opendota.com/matches/8754568379
+
+30. Match ID: 8754568123
+   Средний MMR: N/A
+   radiant_players: [120, 59, 66, 93, 1]
+   dire_players: [54, 10, 20, 84, 4]
+   Ссылка: https://www.opendota.com/matches/8754568123
+
+31. Match ID: 8754568092
+   Средний MMR: N/A
+   radiant_players: [14, 31, 54, 71, 91]
+   dire_players: [7, 33, 68, 84, 44]
+   Ссылка: https://www.opendota.com/matches/8754568092
+
+32. Match ID: 8754567684
+   Средний MMR: N/A
+   radiant_players: [59, 86, 26, 41, 29]
+   dire_players: [69, 42, 14, 74, 35]
+   Ссылка: https://www.opendota.com/matches/8754567684
+
+33. Match ID: 8754567302
+   Средний MMR: N/A
+   radiant_players: [136, 104, 26, 25, 35]
+   dire_players: [100, 93, 42, 64, 36]
+   Ссылка: https://www.opendota.com/matches/8754567302
+
+34. Match ID: 8754566828
+   Средний MMR: N/A
+   radiant_players: [25, 14, 35, 89, 34]
+   dire_players: [11, 1, 95, 113, 74]
+   Ссылка: https://www.opendota.com/matches/8754566828
+
+35. Match ID: 8754566761
+   Средний MMR: N/A
+   radiant_players: [46, 69, 47, 93, 86]
+   dire_players: [138, 104, 35, 129, 40]
+   Ссылка: https://www.opendota.com/matches/8754566761
+
+36. Match ID: 8754566685
+   Средний MMR: N/A
+   radiant_players: [12, 21, 64, 120, 35]
+   dire_players: [84, 68, 14, 81, 88]
+   Ссылка: https://www.opendota.com/matches/8754566685
+
+37. Match ID: 8754566466
+   Средний MMR: N/A
+   radiant_players: [64, 71, 43, 46, 19]
+   dire_players: [65, 1, 11, 48, 74]
+   Ссылка: https://www.opendota.com/matches/8754566466
+
+38. Match ID: 8754566091
+   Средний MMR: N/A
+   radiant_players: [83, 30, 93, 31, 35]
+   dire_players: [110, 41, 106, 53, 14]
+   Ссылка: https://www.opendota.com/matches/8754566091
+
+39. Match ID: 8754566067
+   Средний MMR: N/A
+   radiant_players: [6, 76, 82, 38, 26]
+   dire_players: [31, 14, 91, 19, 61]
+   Ссылка: https://www.opendota.com/matches/8754566067
+
+40. Match ID: 8754566052
+   Средний MMR: N/A
+   radiant_players: [62, 22, 35, 74, 136]
+   dire_players: [21, 111, 11, 106, 57]
+   Ссылка: https://www.opendota.com/matches/8754566052
+
+41. Match ID: 8754566023
+   Средний MMR: N/A
+   radiant_players: [138, 59, 86, 83, 1]
+   dire_players: [56, 23, 42, 53, 113]
+   Ссылка: https://www.opendota.com/matches/8754566023
+
+42. Match ID: 8754565925
+   Средний MMR: N/A
+   radiant_players: [11, 85, 81, 30, 28]
+   dire_players: [44, 101, 91, 136, 88]
+   Ссылка: https://www.opendota.com/matches/8754565925
+
+43. Match ID: 8754565819
+   Средний MMR: N/A
+   radiant_players: [77, 81, 46, 84, 44]
+   dire_players: [21, 17, 26, 93, 29]
+   Ссылка: https://www.opendota.com/matches/8754565819
+
+44. Match ID: 8754565809
+   Средний MMR: N/A
+   radiant_players: [50, 135, 12, 26, 93]
+   dire_players: [8, 71, 1, 97, 120]
+   Ссылка: https://www.opendota.com/matches/8754565809
+
+45. Match ID: 8754565686
+   Средний MMR: N/A
+   radiant_players: [109, 85, 14, 64, 49]
+   dire_players: [100, 87, 22, 108, 73]
+   Ссылка: https://www.opendota.com/matches/8754565686
+
+46. Match ID: 8754565413
+   Средний MMR: N/A
+   radiant_players: [63, 9, 98, 53, 114]
+   dire_players: [88, 32, 84, 123, 39]
+   Ссылка: https://www.opendota.com/matches/8754565413
+
+47. Match ID: 8754565376
+   Средний MMR: N/A
+   radiant_players: [57, 75, 44, 14, 40]
+   dire_players: [104, 27, 85, 123, 35]
+   Ссылка: https://www.opendota.com/matches/8754565376
+
+48. Match ID: 8754565293
+   Средний MMR: N/A
+   radiant_players: [84, 70, 101, 31, 96]
+   dire_players: [8, 46, 54, 32, 114]
+   Ссылка: https://www.opendota.com/matches/8754565293
+
+49. Match ID: 8754565282
+   Средний MMR: N/A
+   radiant_players: [54, 46, 59, 114, 103]
+   dire_players: [112, 109, 48, 22, 84]
+   Ссылка: https://www.opendota.com/matches/8754565282
+
+50. Match ID: 8754565227
+   Средний MMR: N/A
+   radiant_players: [43, 136, 91, 12, 71]
+   dire_players: [47, 40, 84, 68, 114]
+   Ссылка: https://www.opendota.com/matches/8754565227
+
+51. Match ID: 8754565091
+   Средний MMR: N/A
+   radiant_players: [29, 35, 74, 42, 30]
+   dire_players: [46, 36, 56, 6, 41]
+   Ссылка: https://www.opendota.com/matches/8754565091
+
+52. Match ID: 8754565010
+   Средний MMR: N/A
+   radiant_players: [47, 100, 31, 44, 137]
+   dire_players: [84, 1, 43, 111, 36]
+   Ссылка: https://www.opendota.com/matches/8754565010
+
+53. Match ID: 8754564735
+   Средний MMR: N/A
+   radiant_players: [69, 22, 128, 119, 42]
+   dire_players: [29, 101, 71, 74, 35]
+   Ссылка: https://www.opendota.com/matches/8754564735
+
+54. Match ID: 8754564446
+   Средний MMR: N/A
+   radiant_players: [71, 104, 40, 8, 25]
+   dire_players: [88, 6, 14, 46, 21]
+   Ссылка: https://www.opendota.com/matches/8754564446
+
+55. Match ID: 8754564236
+   Средний MMR: N/A
+   radiant_players: [6, 129, 7, 28, 61]
+   dire_players: [53, 22, 48, 57, 17]
+   Ссылка: https://www.opendota.com/matches/8754564236
+
+56. Match ID: 8754564179
+   Средний MMR: N/A
+   radiant_players: [25, 41, 17, 20, 66]
+   dire_players: [123, 61, 4, 110, 6]
+   Ссылка: https://www.opendota.com/matches/8754564179
+
+57. Match ID: 8754564158
+   Средний MMR: N/A
+   radiant_players: [52, 45, 31, 8, 44]
+   dire_players: [108, 129, 9, 29, 96]
+   Ссылка: https://www.opendota.com/matches/8754564158
+
+58. Match ID: 8754564057
+   Средний MMR: N/A
+   radiant_players: [11, 40, 70, 74, 104]
+   dire_players: [14, 44, 15, 102, 47]
+   Ссылка: https://www.opendota.com/matches/8754564057
+
+59. Match ID: 8754563990
+   Средний MMR: N/A
+   radiant_players: [108, 63, 38, 51, 128]
+   dire_players: [29, 67, 62, 121, 40]
+   Ссылка: https://www.opendota.com/matches/8754563990
+
+60. Match ID: 8754563851
+   Средний MMR: N/A
+   radiant_players: [75, 65, 11, 33, 25]
+   dire_players: [47, 26, 38, 7, 113]
+   Ссылка: https://www.opendota.com/matches/8754563851
+
+61. Match ID: 8754563800
+   Средний MMR: N/A
+   radiant_players: [86, 11, 18, 28, 74]
+   dire_players: [71, 4, 65, 14, 84]
+   Ссылка: https://www.opendota.com/matches/8754563800
+
+62. Match ID: 8754563765
+   Средний MMR: N/A
+   radiant_players: [129, 7, 36, 93, 60]
+   dire_players: [18, 64, 67, 71, 100]
+   Ссылка: https://www.opendota.com/matches/8754563765
+
+63. Match ID: 8754563752
+   Средний MMR: N/A
+   radiant_players: [26, 84, 44, 27, 36]
+   dire_players: [71, 28, 86, 13, 8]
+   Ссылка: https://www.opendota.com/matches/8754563752
+
+64. Match ID: 8754563710
+   Средний MMR: N/A
+   radiant_players: [32, 2, 56, 109, 123]
+   dire_players: [82, 11, 26, 7, 45]
+   Ссылка: https://www.opendota.com/matches/8754563710
+
+65. Match ID: 8754563662
+   Средний MMR: N/A
+   radiant_players: [29, 93, 31, 123, 17]
+   dire_players: [8, 128, 21, 131, 98]
+   Ссылка: https://www.opendota.com/matches/8754563662
+
+66. Match ID: 8754563552
+   Средний MMR: N/A
+   radiant_players: [31, 35, 74, 71, 145]
+   dire_players: [93, 42, 5, 36, 30]
+   Ссылка: https://www.opendota.com/matches/8754563552
+
+67. Match ID: 8754563361
+   Средний MMR: N/A
+   radiant_players: [45]
+   dire_players: [65]
+   Ссылка: https://www.opendota.com/matches/8754563361
+
+68. Match ID: 8754563346
+   Средний MMR: N/A
+   radiant_players: [23, 9, 105, 10, 11]
+   dire_players: [47, 30, 74, 96, 13]
+   Ссылка: https://www.opendota.com/matches/8754563346
+
+69. Match ID: 8754563229
+   Средний MMR: N/A
+   radiant_players: [8, 84, 26, 31, 39]
+   dire_players: [20, 40, 27, 145, 129]
+   Ссылка: https://www.opendota.com/matches/8754563229
+
+70. Match ID: 8754563221
+   Средний MMR: N/A
+   radiant_players: [0, 0, 0, 0, 0]
+   dire_players: [0, 0, 0, 0, 0]
+   Ссылка: https://www.opendota.com/matches/8754563221
+
+71. Match ID: 8754562930
+   Средний MMR: N/A
+   radiant_players: [30, 60, 46, 106, 50]
+   dire_players: [27, 81, 101, 28, 74]
+   Ссылка: https://www.opendota.com/matches/8754562930
+
+72. Match ID: 8754562908
+   Средний MMR: N/A
+   radiant_players: [44, 129, 49, 31, 48]
+   dire_players: [9, 29, 8, 30, 86]
+   Ссылка: https://www.opendota.com/matches/8754562908
+
+73. Match ID: 8754562903
+   Средний MMR: N/A
+   radiant_players: [31, 123, 119, 63, 35]
+   dire_players: [1, 22, 46, 30, 40]
+   Ссылка: https://www.opendota.com/matches/8754562903
+
+74. Match ID: 8754562817
+   Средний MMR: N/A
+   radiant_players: [0, 0, 0, 0, 0]
+   dire_players: [0, 0, 0, 0, 0]
+   Ссылка: https://www.opendota.com/matches/8754562817
+
+75. Match ID: 8754562795
+   Средний MMR: N/A
+   radiant_players: [93, 26, 107, 74, 44]
+   dire_players: [9, 85, 14, 75, 42]
+   Ссылка: https://www.opendota.com/matches/8754562795
+
+76. Match ID: 8754562580
+   Средний MMR: N/A
+   radiant_players: [42, 69, 27, 71, 5]
+   dire_players: [36, 29, 9, 14, 35]
+   Ссылка: https://www.opendota.com/matches/8754562580
+
+77. Match ID: 8754562522
+   Средний MMR: N/A
+   radiant_players: [74, 35, 71, 110, 1]
+   dire_players: [81, 104, 14, 114, 9]
+   Ссылка: https://www.opendota.com/matches/8754562522
+
+78. Match ID: 8754562447
+   Средний MMR: N/A
+   radiant_players: [97, 23, 63, 37, 27]
+   dire_players: [103, 67, 2, 5, 73]
+   Ссылка: https://www.opendota.com/matches/8754562447
+
+79. Match ID: 8754562270
+   Средний MMR: N/A
+   radiant_players: [11, 14, 35, 123, 27]
+   dire_players: [43, 93, 18, 67, 44]
+   Ссылка: https://www.opendota.com/matches/8754562270
+
+80. Match ID: 8754562198
+   Средний MMR: N/A
+   radiant_players: [59, 47, 74, 1, 31]
+   dire_players: [14, 131, 44, 75, 18]
+   Ссылка: https://www.opendota.com/matches/8754562198
+
+81. Match ID: 8754562168
+   Средний MMR: N/A
+   radiant_players: [6, 104, 21, 30, 35]
+   dire_players: [145, 38, 56, 113, 86]
+   Ссылка: https://www.opendota.com/matches/8754562168
+
+82. Match ID: 8754562143
+   Средний MMR: N/A
+   radiant_players: [91, 14, 35, 27, 72]
+   dire_players: [129, 50, 84, 145, 100]
+   Ссылка: https://www.opendota.com/matches/8754562143
+
+83. Match ID: 8754562035
+   Средний MMR: N/A
+   radiant_players: [26, 9, 36, 14, 42]
+   dire_players: [7, 11, 6, 112, 71]
+   Ссылка: https://www.opendota.com/matches/8754562035
+
+84. Match ID: 8754562018
+   Средний MMR: N/A
+   radiant_players: [99, 86, 8, 26, 22]
+   dire_players: [29, 58, 27, 47, 25]
+   Ссылка: https://www.opendota.com/matches/8754562018
+
+85. Match ID: 8754561993
+   Средний MMR: N/A
+   radiant_players: [72, 26, 40, 20, 17]
+   dire_players: [86, 113, 66, 44, 29]
+   Ссылка: https://www.opendota.com/matches/8754561993
+
+86. Match ID: 8754561876
+   Средний MMR: N/A
+   radiant_players: [114, 123, 138, 12, 59]
+   dire_players: [8, 75, 11, 1, 14]
+   Ссылка: https://www.opendota.com/matches/8754561876
+
+87. Match ID: 8754561826
+   Средний MMR: N/A
+   radiant_players: [59, 76, 104, 25, 84]
+   dire_players: [56, 44, 6, 34, 105]
+   Ссылка: https://www.opendota.com/matches/8754561826
+
+88. Match ID: 8754561797
+   Средний MMR: N/A
+   radiant_players: [5, 44, 71, 26, 22]
+   dire_players: [96, 6, 81, 64, 27]
+   Ссылка: https://www.opendota.com/matches/8754561797
+
+89. Match ID: 8754561770
+   Средний MMR: N/A
+   radiant_players: [25, 110, 126, 155, 6]
+   dire_players: [94, 67, 119, 88, 42]
+   Ссылка: https://www.opendota.com/matches/8754561770
+
+90. Match ID: 8754561758
+   Средний MMR: N/A
+   radiant_players: [105, 21, 106, 14, 67]
+   dire_players: [137, 81, 50, 74, 11]
+   Ссылка: https://www.opendota.com/matches/8754561758
+
+91. Match ID: 8754561706
+   Средний MMR: N/A
+   radiant_players: [43, 36, 6, 7, 54]
+   dire_players: [74, 84, 10, 155, 76]
+   Ссылка: https://www.opendota.com/matches/8754561706
+
+92. Match ID: 8754561569
+   Средний MMR: N/A
+   radiant_players: [0, 0, 0, 0, 0]
+   dire_players: [0, 0, 0, 0, 0]
+   Ссылка: https://www.opendota.com/matches/8754561569
+
+93. Match ID: 8754561530
+   Средний MMR: N/A
+   radiant_players: [21, 99, 27, 14, 35]
+   dire_players: [86, 1, 46, 97, 22]
+   Ссылка: https://www.opendota.com/matches/8754561530
+
+94. Match ID: 8754561432
+   Средний MMR: N/A
+   radiant_players: [0, 0, 0, 0, 0]
+   dire_players: [0, 0, 0, 0, 0]
+   Ссылка: https://www.opendota.com/matches/8754561432
+
+95. Match ID: 8754561397
+   Средний MMR: N/A
+   radiant_players: [155, 71, 137, 70, 30]
+   dire_players: [52, 104, 62, 93, 53]
+   Ссылка: https://www.opendota.com/matches/8754561397
+
+96. Match ID: 8754561308
+   Средний MMR: N/A
+   radiant_players: [101, 119, 5, 89, 8]
+   dire_players: [6, 41, 22, 114, 71]
+   Ссылка: https://www.opendota.com/matches/8754561308
+
+97. Match ID: 8754561112
+   Средний MMR: N/A
+   radiant_players: [11]
+   dire_players: [11]
+   Ссылка: https://www.opendota.com/matches/8754561112
+
+98. Match ID: 8754561098
+   Средний MMR: N/A
+   radiant_players: [43, 23, 102, 26, 6]
+   dire_players: [85, 92, 60, 104, 72]
+   Ссылка: https://www.opendota.com/matches/8754561098
+
+99. Match ID: 8754561073
+   Средний MMR: N/A
+   radiant_players: [103, 47, 81, 26, 101]
+   dire_players: [14, 40, 28, 114, 84]
+   Ссылка: https://www.opendota.com/matches/8754561073
+
+100. Match ID: 8754561068
+   Средний MMR: N/A
+   radiant_players: [129, 44, 47, 104, 14]
+   dire_players: [96, 128, 15, 87, 123]
+   Ссылка: https://www.opendota.com/matches/8754561068
+
