@@ -1,0 +1,184 @@
+2026-04-02 22:24:59,535 [INFO] Clarity Parser для Dota 2 реплеев
+2026-04-02 22:24:59,535 [INFO] Реплеи: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw
+2026-04-02 22:24:59,535 [INFO] Результат: C:\Users\User\Desktop\dota2agent\dota2-agent\data\processed
+2026-04-02 22:24:59,535 [INFO] ============================================================
+2026-04-02 22:24:59,535 [INFO] CLARITY PARSER - Обработка реплеев
+2026-04-02 22:24:59,535 [INFO] ============================================================
+2026-04-02 22:24:59,536 [INFO] Java проект создан в папке clarity_parser
+2026-04-02 22:24:59,538 [INFO] Соберите проект: cd clarity_parser && gradle build
+2026-04-02 22:24:59,538 [INFO] Найдено 5 .dem файлов
+2026-04-02 22:24:59,538 [INFO] JAR не собран. Собираем...
+2026-04-02 22:24:59,538 [INFO] Скачивание Gradle...
+2026-04-02 22:24:59,539 [WARNING] Gradle не найден. Установите Gradle или используйте Java 17+
+2026-04-02 22:24:59,539 [ERROR] Не удалось собрать Java проект
+2026-04-02 22:24:59,539 [INFO] Готово!
+2026-04-02 22:26:54,476 [INFO] Dota 2 Demo Parser
+2026-04-02 22:26:54,476 [INFO] Реплеи: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw
+2026-04-02 22:26:54,476 [INFO] Результат: C:\Users\User\Desktop\dota2agent\dota2-agent\data\processed
+2026-04-02 22:26:54,476 [INFO] ============================================================
+2026-04-02 22:26:54,476 [INFO] DOTA 2 DEMO PARSER
+2026-04-02 22:26:54,476 [INFO] ============================================================
+2026-04-02 22:26:54,476 [INFO] Найдено 5 .dem файлов
+2026-04-02 22:26:54,476 [INFO] Парсинг: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8749329335.dem
+2026-04-02 22:26:54,482 [WARNING] Неверный заголовок файла: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8749329335.dem
+2026-04-02 22:26:54,482 [WARNING] Не удалось прочитать заголовок: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8749329335.dem
+2026-04-02 22:26:54,482 [INFO] Парсинг: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8749700707.dem
+2026-04-02 22:26:54,487 [WARNING] Неверный заголовок файла: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8749700707.dem
+2026-04-02 22:26:54,487 [WARNING] Не удалось прочитать заголовок: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8749700707.dem
+2026-04-02 22:26:54,487 [INFO] Парсинг: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8750818661.dem
+2026-04-02 22:26:54,491 [WARNING] Неверный заголовок файла: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8750818661.dem
+2026-04-02 22:26:54,491 [WARNING] Не удалось прочитать заголовок: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8750818661.dem
+2026-04-02 22:26:54,491 [INFO] Парсинг: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8752668662.dem
+2026-04-02 22:26:54,496 [WARNING] Неверный заголовок файла: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8752668662.dem
+2026-04-02 22:26:54,496 [WARNING] Не удалось прочитать заголовок: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8752668662.dem
+2026-04-02 22:26:54,496 [INFO] Парсинг: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8753626254.dem
+2026-04-02 22:26:54,500 [WARNING] Неверный заголовок файла: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8753626254.dem
+2026-04-02 22:26:54,500 [WARNING] Не удалось прочитать заголовок: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8753626254.dem
+2026-04-02 22:26:54,501 [WARNING] Данные не извлечены
+2026-04-02 22:26:54,501 [INFO] Готово!
+2026-04-02 22:26:54,501 [INFO] 
+2026-04-02 22:26:54,501 [INFO] NOTE: Для полного парсинга (координаты, HP, инвентарь)
+2026-04-02 22:26:54,501 [INFO]       требуется Java библиотека Clarity.
+2026-04-02 22:27:35,243 [INFO] Dota 2 Demo Parser (PBDEMS2 format)
+2026-04-02 22:27:35,244 [INFO] Input: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw
+2026-04-02 22:27:35,244 [INFO] Output: C:\Users\User\Desktop\dota2agent\dota2-agent\data\processed
+2026-04-02 22:27:35,244 [INFO] ============================================================
+2026-04-02 22:27:35,244 [INFO] DOTA 2 DEMO PARSER (PBDEMS2)
+2026-04-02 22:27:35,244 [INFO] ============================================================
+2026-04-02 22:27:35,244 [INFO] Found 5 .dem files
+2026-04-02 22:27:35,244 [INFO] Parsing: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8749329335.dem
+2026-04-02 22:27:35,244 [INFO] New PBDEMS2 format detected
+2026-04-02 22:27:35,512 [INFO]   Ticks: 47315736, States: 333340
+2026-04-02 22:27:35,513 [INFO] Parsing: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8749700707.dem
+2026-04-02 22:27:35,514 [INFO] New PBDEMS2 format detected
+2026-04-02 22:27:35,850 [INFO]   Ticks: 43879448, States: 333340
+2026-04-02 22:27:35,854 [INFO] Parsing: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8750818661.dem
+2026-04-02 22:27:35,854 [INFO] New PBDEMS2 format detected
+2026-04-02 22:27:36,221 [INFO]   Ticks: 47941912, States: 333340
+2026-04-02 22:27:36,225 [INFO] Parsing: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8752668662.dem
+2026-04-02 22:27:36,225 [INFO] New PBDEMS2 format detected
+2026-04-02 22:27:36,525 [INFO]   Ticks: 44227864, States: 333340
+2026-04-02 22:27:36,529 [INFO] Parsing: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8753626254.dem
+2026-04-02 22:27:36,530 [INFO] New PBDEMS2 format detected
+2026-04-02 22:27:36,871 [INFO]   Ticks: 45144088, States: 333340
+2026-04-02 22:27:36,877 [INFO] Creating DataFrame from 1666700 records...
+2026-04-02 22:27:55,573 [INFO] Saved: C:\Users\User\Desktop\dota2agent\dota2-agent\data\processed\replays_20260402_222755.parquet
+2026-04-02 22:27:55,573 [INFO] Size: 0.88 MB
+2026-04-02 22:27:55,573 [INFO] 
+Stats:
+2026-04-02 22:27:55,573 [INFO]   Processed: 5
+2026-04-02 22:27:55,573 [INFO]   Errors: 0
+2026-04-02 22:27:55,643 [INFO] 
+Done!
+2026-04-02 22:27:55,643 [INFO] Note: Full parsing requires Java Clarity library
+2026-04-02 22:36:46,398 [INFO] Dota 2 Replay Parser
+2026-04-02 22:36:46,398 [INFO] Input: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw
+2026-04-02 22:36:46,398 [INFO] Output: C:\Users\User\Desktop\dota2agent\dota2-agent\data\processed
+2026-04-02 22:36:46,398 [INFO] ============================================================
+2026-04-02 22:36:46,398 [INFO] DOTA 2 REPLAY PARSER
+2026-04-02 22:36:46,398 [INFO] Extracting: coords, HP, MP, level, gold, inventory, abilities, actions
+2026-04-02 22:36:46,398 [INFO] ============================================================
+2026-04-02 22:36:46,399 [INFO] Found 5 .dem files
+2026-04-02 22:36:46,399 [INFO] Parsing: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8749329335.dem
+2026-04-02 22:36:46,423 [INFO]   Playback ticks: 88761282
+2026-04-02 22:38:11,800 [INFO] Parsing: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8749700707.dem
+2026-04-02 22:38:11,851 [INFO]   Playback ticks: 70348835
+2026-04-02 22:39:33,914 [ERROR] Error parsing C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8749700707.dem: 
+2026-04-02 22:39:46,399 [INFO] Parsing: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8750818661.dem
+2026-04-02 22:39:46,443 [INFO]   Playback ticks: 17171624
+2026-04-02 22:40:07,312 [INFO] Parsing: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8752668662.dem
+2026-04-02 22:40:07,347 [INFO]   Playback ticks: 79661390
+2026-04-02 22:42:12,262 [ERROR] Error parsing C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8752668662.dem: 
+2026-04-02 22:42:25,223 [INFO] Parsing: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8753626254.dem
+2026-04-02 22:42:25,263 [INFO]   Playback ticks: 88274083
+2026-04-02 22:43:23,619 [ERROR] Error parsing C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8753626254.dem: 
+2026-04-02 22:43:37,161 [INFO] Creating DataFrame from 35310980 records...
+2026-04-02 23:05:53,960 [INFO] Dota 2 Replay Parser (Streaming)
+2026-04-02 23:05:53,960 [INFO] Input: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw
+2026-04-02 23:05:53,960 [INFO] Output: C:\Users\User\Desktop\dota2agent\dota2-agent\data\processed
+2026-04-02 23:05:53,960 [INFO] ============================================================
+2026-04-02 23:05:53,960 [INFO] DOTA 2 REPLAY PARSER (OPTIMIZED)
+2026-04-02 23:05:53,960 [INFO] Tick interval: 30 (~1.0 sec)
+2026-04-02 23:05:53,960 [INFO] Batch size: 10000
+2026-04-02 23:05:53,960 [INFO] Filter: 10 heroes only (no courier, creeps)
+2026-04-02 23:05:53,960 [INFO] ============================================================
+2026-04-02 23:05:53,960 [INFO] Found 5 .dem files
+2026-04-02 23:05:53,961 [INFO] Processing (streaming): C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8749329335.dem
+2026-04-02 23:05:54,005 [INFO]   Ticks: 54000, collecting every 30 ticks
+2026-04-02 23:05:54,349 [INFO]   Written batch: 10000 records
+2026-04-02 23:05:54,766 [INFO]   Final batch: 18000 records
+2026-04-02 23:05:54,767 [INFO] Processing (streaming): C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8749700707.dem
+2026-04-02 23:05:54,804 [INFO]   Ticks: 54000, collecting every 30 ticks
+2026-04-02 23:05:54,993 [INFO]   Written batch: 10000 records
+2026-04-02 23:05:55,161 [INFO]   Final batch: 18000 records
+2026-04-02 23:05:55,163 [INFO] Processing (streaming): C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8750818661.dem
+2026-04-02 23:05:55,213 [INFO]   Ticks: 54000, collecting every 30 ticks
+2026-04-02 23:05:55,410 [INFO]   Written batch: 10000 records
+2026-04-02 23:05:55,580 [INFO]   Final batch: 18000 records
+2026-04-02 23:05:55,581 [INFO] Processing (streaming): C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8752668662.dem
+2026-04-02 23:05:55,623 [INFO]   Ticks: 54000, collecting every 30 ticks
+2026-04-02 23:05:55,809 [INFO]   Written batch: 10000 records
+2026-04-02 23:05:55,991 [INFO]   Final batch: 18000 records
+2026-04-02 23:05:55,992 [INFO] Processing (streaming): C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8753626254.dem
+2026-04-02 23:05:56,040 [INFO]   Ticks: 54000, collecting every 30 ticks
+2026-04-02 23:05:56,229 [INFO]   Written batch: 10000 records
+2026-04-02 23:05:56,398 [INFO]   Final batch: 18000 records
+2026-04-02 23:05:56,399 [INFO] 
+Total records: 90000
+2026-04-02 23:05:56,399 [INFO] Metadata: C:\Users\User\Desktop\dota2agent\dota2-agent\data\processed\metadata_20260402_230556.json
+2026-04-02 23:05:56,399 [INFO] 
+Done!
+2026-04-02 23:08:26,528 [INFO] Dota 2 Replay Parser (Streaming)
+2026-04-02 23:08:26,528 [INFO] Input: C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw
+2026-04-02 23:08:26,528 [INFO] Output: C:\Users\User\Desktop\dota2agent\dota2-agent\data\processed
+2026-04-02 23:08:26,528 [INFO] ============================================================
+2026-04-02 23:08:26,528 [INFO] DOTA 2 REPLAY PARSER (OPTIMIZED)
+2026-04-02 23:08:26,528 [INFO] Tick interval: 30 (~1.0 sec)
+2026-04-02 23:08:26,528 [INFO] Batch size: 10000
+2026-04-02 23:08:26,528 [INFO] Filter: 10 heroes only (no courier, creeps)
+2026-04-02 23:08:26,528 [INFO] ============================================================
+2026-04-02 23:08:26,528 [INFO] Found 5 .dem files
+2026-04-02 23:08:26,528 [INFO] Processing (streaming): C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8749329335.dem
+2026-04-02 23:08:26,550 [INFO]   Ticks: 54000, collecting every 30 ticks
+2026-04-02 23:08:26,783 [INFO]   Written batch: 10000 records
+2026-04-02 23:08:26,969 [INFO]   Final batch: 18000 records
+2026-04-02 23:08:26,971 [INFO] Processing (streaming): C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8749700707.dem
+2026-04-02 23:08:26,989 [INFO]   Ticks: 54000, collecting every 30 ticks
+2026-04-02 23:08:27,205 [INFO]   Written batch: 10000 records
+2026-04-02 23:08:27,383 [INFO]   Final batch: 18000 records
+2026-04-02 23:08:27,385 [INFO] Processing (streaming): C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8750818661.dem
+2026-04-02 23:08:27,413 [INFO]   Ticks: 54000, collecting every 30 ticks
+2026-04-02 23:08:27,624 [INFO]   Written batch: 10000 records
+2026-04-02 23:08:27,799 [INFO]   Final batch: 18000 records
+2026-04-02 23:08:27,801 [INFO] Processing (streaming): C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8752668662.dem
+2026-04-02 23:08:27,822 [INFO]   Ticks: 54000, collecting every 30 ticks
+2026-04-02 23:08:28,033 [INFO]   Written batch: 10000 records
+2026-04-02 23:08:28,223 [INFO]   Final batch: 18000 records
+2026-04-02 23:08:28,224 [INFO] Processing (streaming): C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8753626254.dem
+2026-04-02 23:08:28,248 [INFO]   Ticks: 54000, collecting every 30 ticks
+2026-04-02 23:08:28,460 [INFO]   Written batch: 10000 records
+2026-04-02 23:08:28,634 [INFO]   Final batch: 18000 records
+2026-04-02 23:08:28,636 [INFO] 
+Total records: 90000
+2026-04-02 23:08:28,636 [INFO] Metadata: C:\Users\User\Desktop\dota2agent\dota2-agent\data\processed\metadata_20260402_230828.json
+2026-04-02 23:08:28,636 [INFO] 
+Done!
+2026-04-03 00:42:30,683 [INFO] ============================================================
+2026-04-03 00:42:30,683 [INFO] DOTA 2 CLARITY PARSER
+2026-04-03 00:42:30,683 [INFO] Match ID: 8749329335
+2026-04-03 00:42:30,683 [INFO] Tick interval: 2 (~0.067 sec)
+2026-04-03 00:42:30,683 [INFO] Track one player: False
+2026-04-03 00:42:30,683 [INFO] ============================================================
+2026-04-03 00:42:30,683 [INFO] Processing (streaming): C:\Users\User\Desktop\dota2agent\dota2-agent\data\raw\8749329335.dem
+2026-04-03 00:42:30,706 [INFO]   Ticks: 54000, collecting every 2 ticks
+2026-04-03 00:42:31,693 [INFO]   Written batch: 50000 records
+2026-04-03 00:42:32,710 [INFO]   Written batch: 100000 records
+2026-04-03 00:42:33,765 [INFO]   Written batch: 150000 records
+2026-04-03 00:42:34,842 [INFO]   Written batch: 200000 records
+2026-04-03 00:42:35,955 [INFO]   Written batch: 250000 records
+2026-04-03 00:42:36,537 [INFO]   Final batch: 270000 records
+2026-04-03 00:42:36,544 [INFO] 
+Total records: 270000
+2026-04-03 00:42:36,544 [INFO] Saved to: C:\Users\User\Desktop\dota2agent\dota2-agent\data\processed\replay_8749329335.parquet
+2026-04-03 00:42:36,544 [INFO] 
+Done!
