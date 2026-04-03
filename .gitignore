@@ -23,3 +23,9 @@ __pycache__/
 *.py[cod]
 venv/
 .env
+
+# Dota 2 replay data (large binary files)
+*.dem
+*.csv
+data/raw/
+data/processed/
