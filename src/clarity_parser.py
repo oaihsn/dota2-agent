@@ -25,9 +25,11 @@ DATA_PROCESSED_DIR = PROJECT_DIR / "data" / "processed"
 LOGS_DIR = PROJECT_DIR / "logs"
 
 # Настройки оптимизации
-TICK_INTERVAL = 30  # Сбор каждые 30 тиков (~1 сек)
+TICK_INTERVAL = 2  # Сбор каждые 2 тика (~0.067 сек = 15 раз в сек)
 MAX_TICKS = 54000  # ~30 минут максимум
-BATCH_SIZE = 10000  # Записывать в файл каждые 10000 записей
+BATCH_SIZE = 50000  # Записывать в файл каждые 50000 записей
+TARGET_ACCOUNT_ID = None  # ID игрока для отслеживания (None = все герои)
+TRACK_ONE_PLAYER = True  # Только 1 игрок (в 10 раз меньше данных)
 
 DATA_PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
@@ -255,12 +257,80 @@ def process_raw_folder():
     logger.info(f"Metadata: {meta_file}")
 
 
-def main():
-    logger.info("Dota 2 Replay Parser (Streaming)")
-    logger.info(f"Input: {DATA_RAW_DIR}")
-    logger.info(f"Output: {DATA_PROCESSED_DIR}")
+def parse_single_demo(
+    dem_path: str, 
+    match_id: int = None,
+    track_one_player: bool = True,
+    tick_interval: int = 2
+):
+    """Парсит один демо-файл.
     
-    process_raw_folder()
+    Args:
+        dem_path: Путь к .dem файлу
+        match_id: ID матча (если None - берется из имени файла)
+        track_one_player: Если True - только 1 игрок, иначе все 10
+        tick_interval: Интервал в тиках (2 = каждые 2 тика)
+    """
+    global TICK_INTERVAL, TRACK_ONE_PLAYER
+    
+    dem_file = Path(dem_path)
+    if not dem_file.exists():
+        logger.error(f"File not found: {dem_file}")
+        return 0
+    
+    # ID матча из имени файла
+    if match_id is None:
+        try:
+            match_id = int(dem_file.stem)
+        except ValueError:
+            match_id = hash(dem_file.name) % 10000000000
+    
+    # Настройки
+    TICK_INTERVAL = tick_interval
+    TRACK_ONE_PLAYER = track_one_player
+    
+    output_file = DATA_PROCESSED_DIR / f"replay_{match_id}.parquet"
+    
+    logger.info("=" * 60)
+    logger.info("DOTA 2 CLARITY PARSER")
+    logger.info(f"Match ID: {match_id}")
+    logger.info(f"Tick interval: {tick_interval} (~{tick_interval/30:.3f} sec)")
+    logger.info(f"Track one player: {track_one_player}")
+    logger.info("=" * 60)
+    
+    count = process_demo_streaming(dem_file, match_id, output_file)
+    
+    logger.info(f"\nTotal records: {count}")
+    logger.info(f"Saved to: {output_file}")
+    
+    return count
+
+
+def main():
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Dota 2 Replay Parser')
+    parser.add_argument('--file', '-f', help='Path to .dem file')
+    parser.add_argument('--match-id', '-m', type=int, help='Match ID')
+    parser.add_argument('--one-player', '-1', action='store_true', help='Track only one player')
+    parser.add_argument('--tick-interval', '-t', type=int, default=2, help='Tick interval (default: 2)')
+    parser.add_argument('--all', '-a', action='store_true', help='Process all files in raw/')
+    
+    args = parser.parse_args()
+    
+    if args.all:
+        process_raw_folder()
+    elif args.file:
+        parse_single_demo(
+            dem_path=args.file,
+            match_id=args.match_id,
+            track_one_player=args.one_player,
+            tick_interval=args.tick_interval
+        )
+    else:
+        # По умолчанию - обрабатываем все файлы
+        process_raw_folder()
+    
     logger.info("\nDone!")
 
 

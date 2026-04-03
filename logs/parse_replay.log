@@ -1,0 +1,62 @@
+2026-04-03 13:08:34,742 [INFO] ============================================================
+2026-04-03 13:08:34,742 [INFO] DOTA 2 REPLAY PARSER (Real Data)
+2026-04-03 13:08:34,742 [INFO] Match ID: 8749329335
+2026-04-03 13:08:34,742 [INFO] File: 8749329335.dem
+2026-04-03 13:08:34,742 [INFO] Tick interval: 30
+2026-04-03 13:08:34,742 [INFO] ============================================================
+2026-04-03 13:08:34,778 [INFO] Found: clarity-protobuf-4.8.jar
+2026-04-03 13:08:34,778 [INFO] Found: clarity.jar
+2026-04-03 13:08:34,778 [INFO] Found: clarity-2.7.0.jar
+2026-04-03 13:08:34,778 [INFO] Found: clarity-3.0.0.jar
+2026-04-03 13:08:34,778 [INFO] Starting JVM with 4 JAR files...
+2026-04-03 13:08:34,895 [INFO] JVM started successfully!
+2026-04-03 13:08:34,896 [ERROR] Parse error: Class com.skadistats.clarity.Clarity is not found
+2026-04-03 13:08:34,914 [ERROR] Parsing failed!
+2026-04-03 13:08:34,914 [INFO] 
+Done!
+2026-04-03 13:23:09,597 [INFO] ============================================================
+2026-04-03 13:23:09,598 [INFO] DOTA 2 REPLAY PARSER (Real Data)
+2026-04-03 13:23:09,598 [INFO] Match ID: 8749329335
+2026-04-03 13:23:09,598 [INFO] File: 8749329335.dem
+2026-04-03 13:23:09,598 [INFO] Tick interval: 30
+2026-04-03 13:23:09,598 [INFO] ============================================================
+2026-04-03 13:23:09,608 [INFO] Found: clarity-protobuf-4.8.jar
+2026-04-03 13:23:09,609 [INFO] Found: clarity.jar
+2026-04-03 13:23:09,609 [INFO] Found: clarity-2.7.0.jar
+2026-04-03 13:23:09,609 [INFO] Found: clarity-3.0.0.jar
+2026-04-03 13:23:09,609 [INFO] Starting JVM with 4 JAR files...
+2026-04-03 13:23:09,711 [INFO] JVM started successfully!
+2026-04-03 13:23:09,712 [ERROR] Parse error: Class com.skadistats.clarity.Clarity is not found
+2026-04-03 13:23:09,732 [ERROR] Parsing failed!
+2026-04-03 13:23:09,732 [INFO] 
+Done!
+2026-04-03 13:23:50,368 [INFO] ============================================================
+2026-04-03 13:23:50,368 [INFO] DOTA 2 REPLAY PARSER (Real Data)
+2026-04-03 13:23:50,368 [INFO] Match ID: 8749329335
+2026-04-03 13:23:50,368 [INFO] File: 8749329335.dem
+2026-04-03 13:23:50,368 [INFO] Tick interval: 30
+2026-04-03 13:23:50,368 [INFO] ============================================================
+2026-04-03 13:23:50,382 [INFO] Found: clarity-proto-5.4.jar
+2026-04-03 13:23:50,382 [INFO] Found: clarity-new.jar
+2026-04-03 13:23:50,382 [INFO] Starting JVM with 2 JAR files...
+2026-04-03 13:23:50,488 [INFO] JVM started successfully!
+2026-04-03 13:23:50,492 [ERROR] Parse error: Class skadistats.clarity.source.FileSource is not found
+2026-04-03 13:23:50,507 [ERROR] Parsing failed!
+2026-04-03 13:23:50,507 [INFO] 
+Done!
+2026-04-03 13:24:35,994 [INFO] ============================================================
+2026-04-03 13:24:35,994 [INFO] DOTA 2 REPLAY PARSER (Real Data)
+2026-04-03 13:24:35,994 [INFO] Match ID: 8749329335
+2026-04-03 13:24:35,994 [INFO] File: 8749329335.dem
+2026-04-03 13:24:35,994 [INFO] Tick interval: 30
+2026-04-03 13:24:35,994 [INFO] ============================================================
+2026-04-03 13:24:36,008 [INFO] Found: clarity-proto-5.4.jar
+2026-04-03 13:24:36,008 [INFO] Found: clarity-new.jar
+2026-04-03 13:24:36,009 [INFO] Starting JVM with 2 JAR files...
+2026-04-03 13:24:36,111 [INFO] JVM started successfully!
+2026-04-03 13:24:36,119 [ERROR] Parse error: No matching overloads found for constructor skadistats.clarity.Clarity(skadistats.clarity.source.MappedFileSource), options are:
+	public skadistats.clarity.Clarity()
+
+2026-04-03 13:24:36,138 [ERROR] Parsing failed!
+2026-04-03 13:24:36,138 [INFO] 
+Done!

@@ -182,3 +182,78 @@ Total records: 270000
 2026-04-03 00:42:36,544 [INFO] Saved to: C:\Users\User\Desktop\dota2agent\dota2-agent\data\processed\replay_8749329335.parquet
 2026-04-03 00:42:36,544 [INFO] 
 Done!
+2026-04-03 11:27:08,134 [INFO] ============================================================
+2026-04-03 11:27:08,134 [INFO] DOTA 2 CLARITY PARSER
+2026-04-03 11:27:08,134 [INFO] Match ID: 8749329335
+2026-04-03 11:27:08,134 [INFO] Tick interval: 2 (~0.067 sec)
+2026-04-03 11:27:08,134 [INFO] Track one player: False
+2026-04-03 11:27:08,134 [INFO] ============================================================
+2026-04-03 11:27:08,134 [INFO] Processing (streaming): data\raw\8749329335.dem
+2026-04-03 11:27:08,157 [INFO]   Ticks: 54000, collecting every 2 ticks
+2026-04-03 11:27:09,288 [INFO]   Written batch: 50000 records
+2026-04-03 11:27:10,457 [INFO]   Written batch: 100000 records
+2026-04-03 11:27:11,654 [INFO]   Written batch: 150000 records
+2026-04-03 11:27:12,888 [INFO]   Written batch: 200000 records
+2026-04-03 11:27:14,140 [INFO]   Written batch: 250000 records
+2026-04-03 11:27:14,817 [INFO]   Final batch: 270000 records
+2026-04-03 11:27:14,826 [INFO] 
+Total records: 270000
+2026-04-03 11:27:14,826 [INFO] Saved to: C:\Users\User\Desktop\dota2agent\dota2-agent\data\processed\replay_8749329335.parquet
+2026-04-03 11:27:14,826 [INFO] 
+Done!
+2026-04-03 12:21:00,012 [INFO] ============================================================
+2026-04-03 12:21:00,012 [INFO] DOTA 2 CLARITY PARSER
+2026-04-03 12:21:00,012 [INFO] Match ID: 8749329335
+2026-04-03 12:21:00,012 [INFO] Tick interval: 30 (~1.000 sec)
+2026-04-03 12:21:00,012 [INFO] Track one player: False
+2026-04-03 12:21:00,012 [INFO] ============================================================
+2026-04-03 12:21:00,012 [INFO] Processing (streaming): data\raw\8749329335.dem
+2026-04-03 12:21:00,035 [INFO]   Ticks: 54000, collecting every 30 ticks
+2026-04-03 12:21:00,706 [INFO]   Final batch: 18000 records
+2026-04-03 12:21:00,717 [INFO] 
+Total records: 18000
+2026-04-03 12:21:00,717 [INFO] Saved to: C:\Users\User\Desktop\dota2agent\dota2-agent\data\processed\replay_8749329335.parquet
+2026-04-03 12:21:00,717 [INFO] 
+Done!
+2026-04-03 12:21:20,850 [INFO] ============================================================
+2026-04-03 12:21:20,850 [INFO] DOTA 2 CLARITY PARSER
+2026-04-03 12:21:20,850 [INFO] Match ID: 8749700707
+2026-04-03 12:21:20,850 [INFO] Tick interval: 30 (~1.000 sec)
+2026-04-03 12:21:20,850 [INFO] Track one player: False
+2026-04-03 12:21:20,850 [INFO] ============================================================
+2026-04-03 12:21:20,850 [INFO] Processing (streaming): data\raw\8749700707.dem
+2026-04-03 12:21:20,868 [INFO]   Ticks: 54000, collecting every 30 ticks
+2026-04-03 12:21:21,254 [INFO]   Final batch: 18000 records
+2026-04-03 12:21:21,258 [INFO] 
+Total records: 18000
+2026-04-03 12:21:21,258 [INFO] Saved to: C:\Users\User\Desktop\dota2agent\dota2-agent\data\processed\replay_8749700707.parquet
+2026-04-03 12:21:21,258 [INFO] 
+Done!
+2026-04-03 12:21:32,398 [INFO] ============================================================
+2026-04-03 12:21:32,398 [INFO] DOTA 2 CLARITY PARSER
+2026-04-03 12:21:32,398 [INFO] Match ID: 8750818661
+2026-04-03 12:21:32,398 [INFO] Tick interval: 30 (~1.000 sec)
+2026-04-03 12:21:32,398 [INFO] Track one player: False
+2026-04-03 12:21:32,398 [INFO] ============================================================
+2026-04-03 12:21:32,398 [INFO] Processing (streaming): data\raw\8750818661.dem
+2026-04-03 12:21:32,426 [INFO]   Ticks: 54000, collecting every 30 ticks
+2026-04-03 12:21:32,806 [INFO]   Final batch: 18000 records
+2026-04-03 12:21:32,810 [INFO] 
+Total records: 18000
+2026-04-03 12:21:32,810 [INFO] Saved to: C:\Users\User\Desktop\dota2agent\dota2-agent\data\processed\replay_8750818661.parquet
+2026-04-03 12:21:32,810 [INFO] 
+Done!
+2026-04-03 12:52:21,299 [INFO] ============================================================
+2026-04-03 12:52:21,300 [INFO] DOTA 2 CLARITY PARSER
+2026-04-03 12:52:21,300 [INFO] Match ID: 8749329335
+2026-04-03 12:52:21,300 [INFO] Tick interval: 30 (~1.000 sec)
+2026-04-03 12:52:21,300 [INFO] Track one player: False
+2026-04-03 12:52:21,300 [INFO] ============================================================
+2026-04-03 12:52:21,300 [INFO] Processing (streaming): data\raw\8749329335.dem
+2026-04-03 12:52:21,325 [INFO]   Ticks: 54000, collecting every 30 ticks
+2026-04-03 12:52:21,988 [INFO]   Final batch: 18000 records
+2026-04-03 12:52:21,998 [INFO] 
+Total records: 18000
+2026-04-03 12:52:21,998 [INFO] Saved to: C:\Users\User\Desktop\dota2agent\dota2-agent\data\processed\replay_8749329335.parquet
+2026-04-03 12:52:21,998 [INFO] 
+Done!
