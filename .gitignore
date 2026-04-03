@@ -1,38 +1,25 @@
+# Large files
+clarity_parser/gradle.zip
+clarity_parser/gradle-8.5/lib/kotlin-compiler-embeddable-1.9.20.jar
+
+# All JAR files
+*.jar
+
+# All ZIP files
+*.zip
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-.Python
 venv/
-env/
 .env
-
-# Data
-data/raw/*
-!data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
-
-# Models
-models/*
-!models/.gitkeep
-
-# Logs
-logs/*
-!logs/.gitkeep
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# PyTorch
-*.pt
-*.pth
-*.ckpt
