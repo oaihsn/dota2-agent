@@ -2,94 +2,100 @@ import cv2
 import numpy as np
 import pyautogui
 import pygame
+import time
+import requests
 import win32gui
 import win32con
-import time
-import requests # Не забудь: pip install requests
 
 # --- НАСТРОЙКИ ---
 MONITOR_W, MONITOR_H = 2560, 1440 
 MAP_SIZE = 325 
+SERVER_URL = "http://127.0.0.1:5555/update_enemies"
 
-TOWER_LOCATIONS = [
-    (173, 153), (209, 124), (278, 206), (280, 156), (279, 105), (243, 89), 
-    (231, 59), (160, 53), (68, 56), (256, 73), (301, 50), (252, 279), 
-    (136, 186), (104, 216), (155, 277), (42, 177), (45, 127), (42, 227), 
-    (73, 242), (87, 274), (55, 257)
-]
+MIN_HERO_AREA = 96      
+SINGLE_HERO_MAX = 211   
+AVERAGE_HERO_SIZE = 155 
+
+T4_TOWERS = [(63, 258), (58, 252), (259, 81), (252, 74)]
+permanent_black_list = list(T4_TOWERS)
+static_memory = {}
+
+def set_window_topmost(window_title):
+    hwnd = win32gui.FindWindow(None, window_title)
+    if hwnd:
+        win32gui.SetWindowPos(hwnd, win32con.HWND_TOPMOST, 0, 0, 0, 0, 
+                              win32con.SWP_NOMOVE | win32con.SWP_NOSIZE)
 
 def start_vision():
     pygame.init()
     screen = pygame.display.set_mode((MAP_SIZE, MAP_SIZE))
-    pygame.display.set_caption("AI VISION -> DATA COLLECTOR")
+    window_title = "AI_VISION_PRO"
+    pygame.display.set_caption(window_title)
+    font = pygame.font.SysFont("Arial", 12, bold=True)
     
-    hwnd = pygame.display.get_wm_info()["window"]
-    win32gui.SetWindowPos(hwnd, win32con.HWND_TOPMOST, 50, 50, 0, 0, win32con.SWP_NOSIZE)
-
     clock = pygame.time.Clock()
-    TOWER_RADIUS = 15 
-    STATIC_THRESHOLD = 15 
-    object_memory = {} 
-
-    print("Vision запущен. Отправка данных на http://localhost:5000/update_enemies")
+    print("Vision запущен. Собираем данные...")
 
     try:
         while True:
-            screenshot = pyautogui.screenshot(region=(0, MONITOR_H - MAP_SIZE, MAP_SIZE, MAP_SIZE))
-            frame = np.array(screenshot)
-            frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
-            
+            now = time.time()
+            img = pyautogui.screenshot(region=(0, MONITOR_H - MAP_SIZE, MAP_SIZE, MAP_SIZE))
+            frame = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
             hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-            mask = cv2.inRange(hsv, np.array([0, 150, 80]), np.array([10, 255, 255])) + \
-                   cv2.inRange(hsv, np.array([170, 150, 80]), np.array([180, 255, 255]))
             
-            contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-            
-            new_memory = {}
-            current_time = time.time()
-            detected_enemies = [] 
+            # Маски цветов
+            m_red = cv2.inRange(hsv, np.array([0, 150, 80]), np.array([10, 255, 255])) + \
+                    cv2.inRange(hsv, np.array([170, 150, 80]), np.array([180, 255, 255]))
+            m_green = cv2.inRange(hsv, np.array([35, 80, 70]), np.array([90, 255, 255]))
+            combined = cv2.bitwise_or(m_red, m_green)
 
-            for cnt in contours:
-                area = cv2.contourArea(cnt)
-                if area < 12: continue
+            for bx, by in permanent_black_list:
+                cv2.circle(combined, (bx, by), 12, (0, 0, 0), -1)
+
+            contours, _ = cv2.findContours(combined, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+            detected_enemies = []
+            screen.blit(pygame.surfarray.make_surface(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB).swapaxes(0, 1)), (0, 0))
+
+            for c in contours:
+                area = cv2.contourArea(c)
+                if area < 30 or area > 700: continue
                 
-                x, y, w, h = cv2.boundingRect(cnt)
-                center = (x + w//2, y + h//2)
+                x, y, w, h = cv2.boundingRect(c)
+                cx, cy = x + w//2, y + h//2
+
+                # 1. ФИЛЬТР ФОРМЫ (Здания - вытянутые, Герои - квадратные)
+                aspect_ratio = float(w) / h
+                if not (0.7 < aspect_ratio < 1.4): continue
+
+                # 2. ФИЛЬТР СТАТИКИ
+                pos_key = (cx // 3, cy // 3)
+                if pos_key in static_memory:
+                    if now - static_memory[pos_key] > 2.0:
+                        if pos_key not in permanent_black_list:
+                            permanent_black_list.append(pos_key)
+                        continue
+                else: static_memory[pos_key] = now
+
+                # 3. КРАСНЫЙ ИЛИ ЗЕЛЕНЫЙ
+                is_red = (hsv[cy, cx][0] < 20 or hsv[cy, cx][0] > 160)
                 
-                in_tower_zone = any(np.sqrt((center[0]-tx)**2 + (center[1]-ty)**2) < TOWER_RADIUS for tx, ty in TOWER_LOCATIONS)
+                if area >= MIN_HERO_AREA:
+                    pygame.draw.rect(screen, (255,0,0) if is_red else (0,255,0), (x, y, w, h), 2)
+                    if is_red:
+                        detected_enemies.append([round(cx/MAP_SIZE, 3), round(cy/MAP_SIZE, 3)])
 
-                duration = 0
-                for old_pos, start_time in object_memory.items():
-                    if np.sqrt((center[0]-old_pos[0])**2 + (center[1]-old_pos[1])**2) < 5:
-                        duration = current_time - start_time
-                        new_memory[old_pos] = start_time
-                        break
-                if duration == 0: new_memory[center] = current_time
-
-                if not (duration > STATIC_THRESHOLD and in_tower_zone):
-                    cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
-                    # Добавляем врага в список (нормализуем координаты 0-1 для нейронки)
-                    detected_enemies.append([round(center[0]/MAP_SIZE, 3), round(center[1]/MAP_SIZE, 3)])
-
-            # ОТПРАВКА ДАННЫХ В COLLECTOR
+            # ОТПРАВКА БЕЗ ПРОКСИ
             if detected_enemies:
-                try:
-                    requests.post("http://localhost:5000/update_enemies", json={"enemies": detected_enemies}, timeout=0.01)
-                except:
-                    pass # Если коллектор еще не запущен
+                try: 
+                    requests.post(SERVER_URL, json={"enemies": detected_enemies}, timeout=0.3, 
+                                  proxies={"http": None, "https": None})
+                except: pass
 
-            object_memory = new_memory
-            frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            surf = pygame.surfarray.make_surface(frame_rgb.swapaxes(0, 1))
-            screen.blit(surf, (0, 0))
             pygame.display.update()
-            
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    pygame.quit(); return
-            clock.tick(30)
-    finally:
-        pygame.quit()
+            if int(now) % 3 == 0: set_window_topmost(window_title)
+            for e in pygame.event.get():
+                if e.type == pygame.QUIT: return
+            clock.tick(25)
+    finally: pygame.quit()
 
-if __name__ == "__main__":
-    start_vision()
+if __name__ == "__main__": start_vision()

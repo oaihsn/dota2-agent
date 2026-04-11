@@ -1,0 +1,9 @@
+# Указываем путь к папке dota_data (где лежит датасет)
+path: dota_data 
+
+train: train/images
+val: train/images   # Используем те же картинки для проверки, раз папки valid нет
+test: train/images
+
+nc: 6
+names: ['creep_ally', 'creep_enemy', 'hero_ally', 'hero_enemy', 'tower_ally', 'tower_enemy']

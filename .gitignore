@@ -29,3 +29,4 @@ venv/
 *.csv
 data/raw/
 data/processed/
+.png
